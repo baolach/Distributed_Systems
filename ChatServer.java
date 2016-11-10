@@ -9,9 +9,6 @@ public class ChatServer implements Runnable
    private ServerSocket server = null;
    private Thread       thread = null;
    private int clientCount = 0;
-   public String[] items = { "clock", "laptop", "vase", "car", "holiday"};
-   public int[] price = { 100, 500, 300, 15000, 1000};
-   public String[] temp;// = { "100", "500", "20" };
 
    public ChatServer(int port)
    {
@@ -93,6 +90,8 @@ public class ChatServer implements Runnable
            System.out.println("TEST: inside for loop");
 			        if(clients[i].getID() != ID)
               {
+                System.out.println("TEST: inside for loop");
+
               /////////////////// how can I change this to the name rather than the ID? to make it better
             	clients[i].send(ID + ": " + input); // Client ID: + client message goes to all other clients
               }

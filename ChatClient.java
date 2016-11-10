@@ -17,7 +17,9 @@ public class ChatClient implements Runnable
    private DataOutputStream streamOut = null;
    private ChatClientThread client    = null;
    private String chatName;
-
+   public String[] items = { "clock", "laptop", "vase", "car", "holiday"};
+   public int[] price = { 100, 500, 300, 15000, 1000};
+   public String[] temp;// = { "100", "500", "20" };
    public long startTime;
    public long elapsedTime;
    public boolean sold ;
