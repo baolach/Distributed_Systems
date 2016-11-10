@@ -1,0 +1,1 @@
+java -cp . ChatServer 8081
